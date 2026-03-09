@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maintenance Calorie Results</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="result-page">
+
+<div class="result-container">
+    <h1>🏋️ Your Results</h1>
+
+    <div class="card">
+        <p>BMR: <span id="bmr">—</span> kcal/day</p>
+        <p>Maintenance Calories: <span id="calories">—</span> kcal/day</p>
+        <p>Cutting Calories (-20%): <span id="cutting">—</span> kcal/day</p>
+        <p>Bulking Calories (+20%): <span id="bulking">—</span> kcal/day</p>
+    </div>
+
+    <h3>Macronutrients (40/30/30)</h3>
+    <div class="macro-grid">
+        <div class="macro-card protein">
+            <h3>Protein</h3>
+            <p id="protein">— g</p>
+        </div>
+        <div class="macro-card carbs">
+            <h3>Carbs</h3>
+            <p id="carbs">— g</p>
+        </div>
+        <div class="macro-card fats">
+            <h3>Fats</h3>
+            <p id="fats">— g</p>
+        </div>
+    </div>
+
+    <h3>Macro Pie Chart</h3>
+    <canvas id="macroChart" width="300" height="300"></canvas>
+
+    <button onclick="goBack()">🔙 Go Back</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
